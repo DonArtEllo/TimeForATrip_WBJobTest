@@ -19,7 +19,7 @@ final class FlightsTableView: UITableView {
         self.dataSource = dataSource
         self.delegate = delegate
         
-        backgroundColor = .black
+        backgroundColor = UIColor(named: "WBPurplish")
         translatesAutoresizingMaskIntoConstraints = false
     }
     

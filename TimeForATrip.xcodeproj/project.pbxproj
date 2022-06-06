@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8C4084532845C1F700580F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084522845C1F700580F09 /* AppDelegate.swift */; };
 		8C4084552845C1F700580F09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084542845C1F700580F09 /* SceneDelegate.swift */; };
-		8C40845C2845C1FA00580F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C40845B2845C1FA00580F09 /* Assets.xcassets */; };
 		8C40845F2845C1FA00580F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C40845D2845C1FA00580F09 /* LaunchScreen.storyboard */; };
 		8C4084692845C2B300580F09 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084682845C2B300580F09 /* Coordinator.swift */; };
 		8C40846B2845C2C600580F09 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40846A2845C2C600580F09 /* ControllerFactory.swift */; };
@@ -26,10 +25,11 @@
 		8C40848B2846241500580F09 /* FlightDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40848A2846241500580F09 /* FlightDetailsCoordinator.swift */; };
 		8C40848D2846242A00580F09 /* FlightDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40848C2846242A00580F09 /* FlightDetailsModel.swift */; };
 		8C40848F2846244100580F09 /* FlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40848E2846244100580F09 /* FlightDetailsViewController.swift */; };
-		8C4084912847A1AE00580F09 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084902847A1AE00580F09 /* LikeButton.swift */; };
+		8C4084912847A1AE00580F09 /* LikeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084902847A1AE00580F09 /* LikeButtonView.swift */; };
 		8C40849428490E0700580F09 /* FlightsDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40849328490E0700580F09 /* FlightsDataPublisher.swift */; };
 		8C4084962849158700580F09 /* InternalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084952849158700580F09 /* InternalData.swift */; };
 		8C408498284916E400580F09 /* FlightsDataPublisherFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C408497284916E400580F09 /* FlightsDataPublisherFacade.swift */; };
+		8CB8DD0E284E6A0900D3D03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB8DD0D284E6A0900D3D03C /* Assets.xcassets */; };
 		8CE6AB53284BE60D000DDC09 /* loading-buffering.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8CE6AB52284BE60D000DDC09 /* loading-buffering.gif */; };
 		AA04618678AF859B7975DA12 /* Pods_TimeForATrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFF04D0F1BB9A23AD7BAB0B /* Pods_TimeForATrip.framework */; };
 /* End PBXBuildFile section */
@@ -39,7 +39,6 @@
 		8C40844F2845C1F700580F09 /* TimeForATrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeForATrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4084522845C1F700580F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4084542845C1F700580F09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C40845B2845C1FA00580F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C40845E2845C1FA00580F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C4084602845C1FA00580F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C4084682845C2B300580F09 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -57,10 +56,11 @@
 		8C40848A2846241500580F09 /* FlightDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsCoordinator.swift; sourceTree = "<group>"; };
 		8C40848C2846242A00580F09 /* FlightDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsModel.swift; sourceTree = "<group>"; };
 		8C40848E2846244100580F09 /* FlightDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewController.swift; sourceTree = "<group>"; };
-		8C4084902847A1AE00580F09 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		8C4084902847A1AE00580F09 /* LikeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonView.swift; sourceTree = "<group>"; };
 		8C40849328490E0700580F09 /* FlightsDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDataPublisher.swift; sourceTree = "<group>"; };
 		8C4084952849158700580F09 /* InternalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalData.swift; sourceTree = "<group>"; };
 		8C408497284916E400580F09 /* FlightsDataPublisherFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDataPublisherFacade.swift; sourceTree = "<group>"; };
+		8CB8DD0D284E6A0900D3D03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE6AB52284BE60D000DDC09 /* loading-buffering.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading-buffering.gif"; sourceTree = "<group>"; };
 		A0D1B102555737DDE21B6844 /* Pods-TimeForATrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeForATrip.release.xcconfig"; path = "Target Support Files/Pods-TimeForATrip/Pods-TimeForATrip.release.xcconfig"; sourceTree = "<group>"; };
 		E00CBCBE73F3387B1D7AC082 /* Pods-TimeForATrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeForATrip.debug.xcconfig"; path = "Target Support Files/Pods-TimeForATrip/Pods-TimeForATrip.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,17 +109,16 @@
 			children = (
 				8C4084522845C1F700580F09 /* AppDelegate.swift */,
 				8C4084542845C1F700580F09 /* SceneDelegate.swift */,
-				8C40847B2845D2F700580F09 /* Network data */,
+				8C40847B2845D2F700580F09 /* NetworkData */,
 				8C4084702845C3F700580F09 /* FlightsModule */,
-				8C4084812845F86F00580F09 /* FlightInfoModule */,
+				8C4084812845F86F00580F09 /* FlightDetailsModule */,
 				8C4084672845C29400580F09 /* Models */,
 				8C4084822845F8D600580F09 /* Views */,
 				8C4084752845C58100580F09 /* Controllers */,
 				8C4084662845C27900580F09 /* Coordinators */,
 				8C4084872846026A00580F09 /* Extensions.swift */,
-				8C4084902847A1AE00580F09 /* LikeButton.swift */,
-				8C40845B2845C1FA00580F09 /* Assets.xcassets */,
 				8CE6AB54284DC1C6000DDC09 /* Images */,
+				8CB8DD0D284E6A0900D3D03C /* Assets.xcassets */,
 				8C40845D2845C1FA00580F09 /* LaunchScreen.storyboard */,
 				8C4084602845C1FA00580F09 /* Info.plist */,
 			);
@@ -163,14 +162,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		8C40847B2845D2F700580F09 /* Network data */ = {
+		8C40847B2845D2F700580F09 /* NetworkData */ = {
 			isa = PBXGroup;
 			children = (
 				8C40847C2845D30500580F09 /* Model */,
 				8C40847F2845D3EE00580F09 /* NetworkService.swift */,
 				8C4084922848A1B900580F09 /* FlightsDataPublisher */,
 			);
-			path = "Network data";
+			path = NetworkData;
 			sourceTree = "<group>";
 		};
 		8C40847C2845D30500580F09 /* Model */ = {
@@ -182,13 +181,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8C4084812845F86F00580F09 /* FlightInfoModule */ = {
+		8C4084812845F86F00580F09 /* FlightDetailsModule */ = {
 			isa = PBXGroup;
 			children = (
 				8C40848C2846242A00580F09 /* FlightDetailsModel.swift */,
 				8C40848E2846244100580F09 /* FlightDetailsViewController.swift */,
 			);
-			path = FlightInfoModule;
+			path = FlightDetailsModule;
 			sourceTree = "<group>";
 		};
 		8C4084822845F8D600580F09 /* Views */ = {
@@ -196,6 +195,7 @@
 			children = (
 				8C4084832845F8EC00580F09 /* FlightsTableView.swift */,
 				8C4084852845FC4200580F09 /* FlightsTableViewCell.swift */,
+				8C4084902847A1AE00580F09 /* LikeButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C40845F2845C1FA00580F09 /* LaunchScreen.storyboard in Resources */,
-				8C40845C2845C1FA00580F09 /* Assets.xcassets in Resources */,
+				8CB8DD0E284E6A0900D3D03C /* Assets.xcassets in Resources */,
 				8CE6AB53284BE60D000DDC09 /* loading-buffering.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +354,7 @@
 				8C4084692845C2B300580F09 /* Coordinator.swift in Sources */,
 				8C4084772845C59900580F09 /* TabBarController.swift in Sources */,
 				8C40849428490E0700580F09 /* FlightsDataPublisher.swift in Sources */,
-				8C4084912847A1AE00580F09 /* LikeButton.swift in Sources */,
+				8C4084912847A1AE00580F09 /* LikeButtonView.swift in Sources */,
 				8C40846B2845C2C600580F09 /* ControllerFactory.swift in Sources */,
 				8C4084532845C1F700580F09 /* AppDelegate.swift in Sources */,
 				8C40846F2845C3B600580F09 /* FlightsCoordinator.swift in Sources */,

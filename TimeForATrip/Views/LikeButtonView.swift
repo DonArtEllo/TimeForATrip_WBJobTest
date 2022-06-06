@@ -1,5 +1,5 @@
 //
-//  LikeButton.swift
+//  LikeButtonView.swift
 //  TimeForATrip
 //
 //  Created by Артем on 01.06.2022.
@@ -8,12 +8,12 @@
 import UIKit
 
 /// Custom round Like button
-final class LikeButton: UIView {
+final class LikeButtonView: UIView {
 
     private let likeImageView: UIImageView = {
         let likeImageView = UIImageView()
         likeImageView.contentMode = .scaleAspectFit
-        likeImageView.tintColor = .systemRed
+        likeImageView.tintColor = UIColor(named: "WBRed")
         likeImageView.image = UIImage(systemName: "heart")
         
         likeImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -24,9 +24,9 @@ final class LikeButton: UIView {
         super.init(frame: frame)
         
         layer.borderWidth = 2
-        layer.borderColor = UIColor.systemRed.cgColor
+        layer.borderColor = UIColor(named: "WBRed")?.cgColor
         layer.cornerRadius = 28
-        backgroundColor = .white
+        backgroundColor = UIColor(named: "WBGrey0")
         
         addSubview(likeImageView)
         
@@ -44,13 +44,14 @@ final class LikeButton: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// Method to change button color
     public func toggleLike(newLikeStatus: Bool) {
         if newLikeStatus {
-            likeImageView.tintColor = .white
-            self.backgroundColor = .systemRed
+            likeImageView.tintColor = UIColor(named: "WBGrey0")
+            self.backgroundColor = UIColor(named: "WBRed")
         } else {
-            likeImageView.tintColor = .systemRed
-            self.backgroundColor = .white
+            likeImageView.tintColor = UIColor(named: "WBRed")
+            self.backgroundColor = UIColor(named: "WBGrey0")
         }
     }
 

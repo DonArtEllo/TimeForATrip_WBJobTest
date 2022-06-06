@@ -19,7 +19,7 @@ class FlightsViewController: UIViewController {
     // View for loading animation
     private var fullscreenBackgroundView: UIView = {
         let fullscreenBackgroundView = UIView()
-        fullscreenBackgroundView.backgroundColor = .systemGray6
+        fullscreenBackgroundView.backgroundColor = UIColor(named: "WBPurplish")
         fullscreenBackgroundView.alpha = 1
         
         fullscreenBackgroundView.isUserInteractionEnabled = false
@@ -52,15 +52,27 @@ class FlightsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNavigationBar()
         setupViews()
         reloadTableData()
     }
     
-    private func setupViews() {
+    // Setup Navigation Bar
+    private func setupNavigationBar() {
         self.navigationItem.backButtonDisplayMode = .minimal
         self.navigationItem.title = "Purple Cherry Airlines"
-
-        view.backgroundColor = .white
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithOpaqueBackground()
+        navigationBarAppearance.backgroundColor = UIColor(named: "WBPurplish")
+        navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "WBGrey0") ?? UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 20)]
+        self.navigationController?.navigationBar.standardAppearance = navigationBarAppearance
+        self.navigationController?.navigationBar.backgroundColor = UIColor(named: "WBPurplish")
+        self.navigationController?.navigationBar.tintColor = UIColor(named: "WBGrey0")
+    }
+    
+    // Setup all views
+    private func setupViews() {
+        view.backgroundColor = UIColor(named: "WBPurplish")
         view.addSubviews(
             flightsTableView,
             fullscreenBackgroundView,
@@ -87,13 +99,14 @@ class FlightsViewController: UIViewController {
 
             flightsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             flightsTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            flightsTableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            flightsTableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+            flightsTableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 4),
+            flightsTableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -4)
         ]
         
         NSLayoutConstraint.activate(constraints)
     }
-        
+    
+    // Reload TableView's Data
     func reloadTableData() {
         viewModel.networkService.getFlightsData { _ in
             DispatchQueue.main.async {
@@ -169,14 +182,18 @@ class FlightsViewController: UIViewController {
 
 // MARK: - Extensions
 extension FlightsViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel.networkService.flightsList.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = flightsTableView.dequeueReusableCell(withIdentifier: String(describing: FlightsTableViewCell.self), for: indexPath) as! FlightsTableViewCell
         
-        let flight = viewModel.networkService.flightsList[indexPath.row]
+        let flight = viewModel.networkService.flightsList[indexPath.section]
         cell.flightFromParent = flight
         cell.flightsDataPublisherFacade = viewModel.networkService.flightsDataPublisherFacade
         cell.addFacadeSubscription()
@@ -186,8 +203,6 @@ extension FlightsViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
 
 extension FlightsViewController: UITableViewDelegate {
@@ -196,16 +211,18 @@ extension FlightsViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return nil
+        let footerView = UIView()
+        footerView.backgroundColor = view.backgroundColor
+        return footerView
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return .zero
+        return 8
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         flightsTableView.deselectRow(at: indexPath, animated: true)
         
-        viewModel.onTapShowFlightDetails(viewModel.networkService.flightsList[indexPath.row].searchToken)
+        viewModel.onTapShowFlightDetails(viewModel.networkService.flightsList[indexPath.section].searchToken)
     }
 }
