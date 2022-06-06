@@ -52,7 +52,7 @@
 * Иконка “Лайк” (имеет два состояния и означает лайкнул ли пользователь данный авиаперелет). Данная иконка является активной: её можно нажать.
 
 ## Второй экран
-![Second Screen Image: Flight Details View](./FlightsTableScreenshot.png)
+![Second Screen Image: Flight Details View](./FlightDetailsScreenshot.png)
 
 На втором экране содержится вся информация, что и на первом экране, но с добавлением нескольких изображений.
 
