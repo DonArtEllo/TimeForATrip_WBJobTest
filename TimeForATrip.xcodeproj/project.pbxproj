@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C4084532845C1F700580F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084522845C1F700580F09 /* AppDelegate.swift */; };
+		8C4084552845C1F700580F09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084542845C1F700580F09 /* SceneDelegate.swift */; };
+		8C40845C2845C1FA00580F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C40845B2845C1FA00580F09 /* Assets.xcassets */; };
+		8C40845F2845C1FA00580F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C40845D2845C1FA00580F09 /* LaunchScreen.storyboard */; };
+		8C4084692845C2B300580F09 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084682845C2B300580F09 /* Coordinator.swift */; };
+		8C40846B2845C2C600580F09 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40846A2845C2C600580F09 /* ControllerFactory.swift */; };
+		8C40846D2845C35500580F09 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40846C2845C35500580F09 /* RootCoordinator.swift */; };
+		8C40846F2845C3B600580F09 /* FlightsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40846E2845C3B600580F09 /* FlightsCoordinator.swift */; };
+		8C4084722845C40F00580F09 /* FlightsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084712845C40F00580F09 /* FlightsModel.swift */; };
+		8C4084742845C42000580F09 /* FlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084732845C42000580F09 /* FlightsViewController.swift */; };
+		8C4084772845C59900580F09 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084762845C59900580F09 /* TabBarController.swift */; };
+		8C40847E2845D32200580F09 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40847D2845D32200580F09 /* JSONData.swift */; };
+		8C4084802845D3EE00580F09 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40847F2845D3EE00580F09 /* NetworkService.swift */; };
+		8C4084842845F8EC00580F09 /* FlightsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084832845F8EC00580F09 /* FlightsTableView.swift */; };
+		8C4084862845FC4200580F09 /* FlightsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084852845FC4200580F09 /* FlightsTableViewCell.swift */; };
+		8C4084882846026A00580F09 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084872846026A00580F09 /* Extensions.swift */; };
+		8C40848B2846241500580F09 /* FlightDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40848A2846241500580F09 /* FlightDetailsCoordinator.swift */; };
+		8C40848D2846242A00580F09 /* FlightDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40848C2846242A00580F09 /* FlightDetailsModel.swift */; };
+		8C40848F2846244100580F09 /* FlightDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40848E2846244100580F09 /* FlightDetailsViewController.swift */; };
+		8C4084912847A1AE00580F09 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084902847A1AE00580F09 /* LikeButton.swift */; };
+		8C40849428490E0700580F09 /* FlightsDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C40849328490E0700580F09 /* FlightsDataPublisher.swift */; };
+		8C4084962849158700580F09 /* InternalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4084952849158700580F09 /* InternalData.swift */; };
+		8C408498284916E400580F09 /* FlightsDataPublisherFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C408497284916E400580F09 /* FlightsDataPublisherFacade.swift */; };
+		8CE6AB53284BE60D000DDC09 /* loading-buffering.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8CE6AB52284BE60D000DDC09 /* loading-buffering.gif */; };
+		AA04618678AF859B7975DA12 /* Pods_TimeForATrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFF04D0F1BB9A23AD7BAB0B /* Pods_TimeForATrip.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CFF04D0F1BB9A23AD7BAB0B /* Pods_TimeForATrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeForATrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C40844F2845C1F700580F09 /* TimeForATrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeForATrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4084522845C1F700580F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C4084542845C1F700580F09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C40845B2845C1FA00580F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C40845E2845C1FA00580F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C4084602845C1FA00580F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4084682845C2B300580F09 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8C40846A2845C2C600580F09 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		8C40846C2845C35500580F09 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		8C40846E2845C3B600580F09 /* FlightsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsCoordinator.swift; sourceTree = "<group>"; };
+		8C4084712845C40F00580F09 /* FlightsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsModel.swift; sourceTree = "<group>"; };
+		8C4084732845C42000580F09 /* FlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsViewController.swift; sourceTree = "<group>"; };
+		8C4084762845C59900580F09 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8C40847D2845D32200580F09 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
+		8C40847F2845D3EE00580F09 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8C4084832845F8EC00580F09 /* FlightsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsTableView.swift; sourceTree = "<group>"; };
+		8C4084852845FC4200580F09 /* FlightsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsTableViewCell.swift; sourceTree = "<group>"; };
+		8C4084872846026A00580F09 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8C40848A2846241500580F09 /* FlightDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsCoordinator.swift; sourceTree = "<group>"; };
+		8C40848C2846242A00580F09 /* FlightDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsModel.swift; sourceTree = "<group>"; };
+		8C40848E2846244100580F09 /* FlightDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsViewController.swift; sourceTree = "<group>"; };
+		8C4084902847A1AE00580F09 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		8C40849328490E0700580F09 /* FlightsDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDataPublisher.swift; sourceTree = "<group>"; };
+		8C4084952849158700580F09 /* InternalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalData.swift; sourceTree = "<group>"; };
+		8C408497284916E400580F09 /* FlightsDataPublisherFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsDataPublisherFacade.swift; sourceTree = "<group>"; };
+		8CE6AB52284BE60D000DDC09 /* loading-buffering.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading-buffering.gif"; sourceTree = "<group>"; };
+		A0D1B102555737DDE21B6844 /* Pods-TimeForATrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeForATrip.release.xcconfig"; path = "Target Support Files/Pods-TimeForATrip/Pods-TimeForATrip.release.xcconfig"; sourceTree = "<group>"; };
+		E00CBCBE73F3387B1D7AC082 /* Pods-TimeForATrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeForATrip.debug.xcconfig"; path = "Target Support Files/Pods-TimeForATrip/Pods-TimeForATrip.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C40844C2845C1F700580F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA04618678AF859B7975DA12 /* Pods_TimeForATrip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F502B41C21700448B00C3BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CFF04D0F1BB9A23AD7BAB0B /* Pods_TimeForATrip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C4084462845C1F700580F09 = {
+			isa = PBXGroup;
+			children = (
+				8C4084512845C1F700580F09 /* TimeForATrip */,
+				8C4084502845C1F700580F09 /* Products */,
+				E55D03789DA0831FA16AC0EA /* Pods */,
+				2F502B41C21700448B00C3BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C4084502845C1F700580F09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C40844F2845C1F700580F09 /* TimeForATrip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C4084512845C1F700580F09 /* TimeForATrip */ = {
+			isa = PBXGroup;
+			children = (
+				8C4084522845C1F700580F09 /* AppDelegate.swift */,
+				8C4084542845C1F700580F09 /* SceneDelegate.swift */,
+				8C40847B2845D2F700580F09 /* Network data */,
+				8C4084702845C3F700580F09 /* FlightsModule */,
+				8C4084812845F86F00580F09 /* FlightInfoModule */,
+				8C4084672845C29400580F09 /* Models */,
+				8C4084822845F8D600580F09 /* Views */,
+				8C4084752845C58100580F09 /* Controllers */,
+				8C4084662845C27900580F09 /* Coordinators */,
+				8C4084872846026A00580F09 /* Extensions.swift */,
+				8C4084902847A1AE00580F09 /* LikeButton.swift */,
+				8C40845B2845C1FA00580F09 /* Assets.xcassets */,
+				8CE6AB54284DC1C6000DDC09 /* Images */,
+				8C40845D2845C1FA00580F09 /* LaunchScreen.storyboard */,
+				8C4084602845C1FA00580F09 /* Info.plist */,
+			);
+			path = TimeForATrip;
+			sourceTree = "<group>";
+		};
+		8C4084662845C27900580F09 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8C4084682845C2B300580F09 /* Coordinator.swift */,
+				8C40846C2845C35500580F09 /* RootCoordinator.swift */,
+				8C40846E2845C3B600580F09 /* FlightsCoordinator.swift */,
+				8C40848A2846241500580F09 /* FlightDetailsCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8C4084672845C29400580F09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C40846A2845C2C600580F09 /* ControllerFactory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C4084702845C3F700580F09 /* FlightsModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C4084712845C40F00580F09 /* FlightsModel.swift */,
+				8C4084732845C42000580F09 /* FlightsViewController.swift */,
+			);
+			name = FlightsModule;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C4084752845C58100580F09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C4084762845C59900580F09 /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8C40847B2845D2F700580F09 /* Network data */ = {
+			isa = PBXGroup;
+			children = (
+				8C40847C2845D30500580F09 /* Model */,
+				8C40847F2845D3EE00580F09 /* NetworkService.swift */,
+				8C4084922848A1B900580F09 /* FlightsDataPublisher */,
+			);
+			path = "Network data";
+			sourceTree = "<group>";
+		};
+		8C40847C2845D30500580F09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C40847D2845D32200580F09 /* JSONData.swift */,
+				8C4084952849158700580F09 /* InternalData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C4084812845F86F00580F09 /* FlightInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C40848C2846242A00580F09 /* FlightDetailsModel.swift */,
+				8C40848E2846244100580F09 /* FlightDetailsViewController.swift */,
+			);
+			path = FlightInfoModule;
+			sourceTree = "<group>";
+		};
+		8C4084822845F8D600580F09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C4084832845F8EC00580F09 /* FlightsTableView.swift */,
+				8C4084852845FC4200580F09 /* FlightsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C4084922848A1B900580F09 /* FlightsDataPublisher */ = {
+			isa = PBXGroup;
+			children = (
+				8C40849328490E0700580F09 /* FlightsDataPublisher.swift */,
+				8C408497284916E400580F09 /* FlightsDataPublisherFacade.swift */,
+			);
+			path = FlightsDataPublisher;
+			sourceTree = "<group>";
+		};
+		8CE6AB54284DC1C6000DDC09 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8CE6AB55284DC1D9000DDC09 /* GIF */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8CE6AB55284DC1D9000DDC09 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				8CE6AB52284BE60D000DDC09 /* loading-buffering.gif */,
+			);
+			path = GIF;
+			sourceTree = "<group>";
+		};
+		E55D03789DA0831FA16AC0EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E00CBCBE73F3387B1D7AC082 /* Pods-TimeForATrip.debug.xcconfig */,
+				A0D1B102555737DDE21B6844 /* Pods-TimeForATrip.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C40844E2845C1F700580F09 /* TimeForATrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C4084632845C1FA00580F09 /* Build configuration list for PBXNativeTarget "TimeForATrip" */;
+			buildPhases = (
+				E1695AF34D46E026783CC804 /* [CP] Check Pods Manifest.lock */,
+				8C40844B2845C1F700580F09 /* Sources */,
+				8C40844C2845C1F700580F09 /* Frameworks */,
+				8C40844D2845C1F700580F09 /* Resources */,
+				882FDB92B55427AFAC92072D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeForATrip;
+			productName = TimeForATrip;
+			productReference = 8C40844F2845C1F700580F09 /* TimeForATrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C4084472845C1F700580F09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					8C40844E2845C1F700580F09 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C40844A2845C1F700580F09 /* Build configuration list for PBXProject "TimeForATrip" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C4084462845C1F700580F09;
+			productRefGroup = 8C4084502845C1F700580F09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C40844E2845C1F700580F09 /* TimeForATrip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C40844D2845C1F700580F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C40845F2845C1FA00580F09 /* LaunchScreen.storyboard in Resources */,
+				8C40845C2845C1FA00580F09 /* Assets.xcassets in Resources */,
+				8CE6AB53284BE60D000DDC09 /* loading-buffering.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		882FDB92B55427AFAC92072D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeForATrip/Pods-TimeForATrip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeForATrip/Pods-TimeForATrip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeForATrip/Pods-TimeForATrip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1695AF34D46E026783CC804 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeForATrip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C40844B2845C1F700580F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4084742845C42000580F09 /* FlightsViewController.swift in Sources */,
+				8C4084862845FC4200580F09 /* FlightsTableViewCell.swift in Sources */,
+				8C4084692845C2B300580F09 /* Coordinator.swift in Sources */,
+				8C4084772845C59900580F09 /* TabBarController.swift in Sources */,
+				8C40849428490E0700580F09 /* FlightsDataPublisher.swift in Sources */,
+				8C4084912847A1AE00580F09 /* LikeButton.swift in Sources */,
+				8C40846B2845C2C600580F09 /* ControllerFactory.swift in Sources */,
+				8C4084532845C1F700580F09 /* AppDelegate.swift in Sources */,
+				8C40846F2845C3B600580F09 /* FlightsCoordinator.swift in Sources */,
+				8C40846D2845C35500580F09 /* RootCoordinator.swift in Sources */,
+				8C40848D2846242A00580F09 /* FlightDetailsModel.swift in Sources */,
+				8C4084842845F8EC00580F09 /* FlightsTableView.swift in Sources */,
+				8C4084962849158700580F09 /* InternalData.swift in Sources */,
+				8C4084882846026A00580F09 /* Extensions.swift in Sources */,
+				8C40848F2846244100580F09 /* FlightDetailsViewController.swift in Sources */,
+				8C4084552845C1F700580F09 /* SceneDelegate.swift in Sources */,
+				8C40848B2846241500580F09 /* FlightDetailsCoordinator.swift in Sources */,
+				8C408498284916E400580F09 /* FlightsDataPublisherFacade.swift in Sources */,
+				8C40847E2845D32200580F09 /* JSONData.swift in Sources */,
+				8C4084802845D3EE00580F09 /* NetworkService.swift in Sources */,
+				8C4084722845C40F00580F09 /* FlightsModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C40845D2845C1FA00580F09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C40845E2845C1FA00580F09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C4084612845C1FA00580F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C4084622845C1FA00580F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C4084642845C1FA00580F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00CBCBE73F3387B1D7AC082 /* Pods-TimeForATrip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85AUL5762U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeForATrip/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "d.art.e-progs.TimeForATrip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C4084652845C1FA00580F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D1B102555737DDE21B6844 /* Pods-TimeForATrip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85AUL5762U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeForATrip/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "d.art.e-progs.TimeForATrip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C40844A2845C1F700580F09 /* Build configuration list for PBXProject "TimeForATrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4084612845C1FA00580F09 /* Debug */,
+				8C4084622845C1FA00580F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C4084632845C1FA00580F09 /* Build configuration list for PBXNativeTarget "TimeForATrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4084642845C1FA00580F09 /* Debug */,
+				8C4084652845C1FA00580F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C4084472845C1F700580F09 /* Project object */;
+}
